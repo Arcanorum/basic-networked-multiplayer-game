@@ -136,7 +136,7 @@ io.on('connection', function (socket) {
             // This player is now in a game.
             socket.isInGame = true;
             // Add a basic object that tracks player position to the list of players, using
-            // the ID of this socket as the key for convenience, as each socket ID is unique..
+            // the ID of this socket as the key for convenience, as each socket ID is unique.
             players[socket.id] = {
                 x: 200,
                 y: 150
@@ -145,8 +145,8 @@ io.on('connection', function (socket) {
             // A socket can be in many rooms.
             socket.join('game-room');
 
-            // Tell the client that they successfully joined the game, and send them the data of all players currently in the game.
-            socket.emit('join_game_success', preparePlayersDataToSend());
+            // Tell the client that they successfully joined the game.
+            socket.emit('join_game_success');
             console.log("* " + socket.username + " joined a game.");
         }
         else {
