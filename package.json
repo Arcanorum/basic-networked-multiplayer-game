@@ -1,7 +1,7 @@
 {
-  "name": "basic-multiplayer-template",
+  "name": "basic-networked-multiplayer-game",
   "version": "0.0.1",
-  "description": "Basic multiplayer game template.",
+  "description": "A basic networked multiplayer game example/template, with lots of explanations.",
   "dependencies": {
     "express": "^4.15.2",
     "socket.io": "^1.7.3"
