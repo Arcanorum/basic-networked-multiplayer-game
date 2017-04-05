@@ -1,0 +1,9 @@
+{
+  "name": "basic-multiplayer-template",
+  "version": "0.0.1",
+  "description": "Basic multiplayer game template.",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  }
+}
