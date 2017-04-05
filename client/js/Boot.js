@@ -38,10 +38,10 @@ socket.on('good_to_hear', function () {
     console.log("* Now check the output in the command line console that the server is running in.");
 });
 
-socket.on('join_game_success', function (data) {
+socket.on('join_game_success', function () {
     console.log("");
     console.log("* * * join_game_success event received from server.");
-    console.log("* The server sent the data of the other players that are already in the game.");
+    console.log("* Starting Game state.");
     // This player joined the game. Start the 'Game' state.
     _this.state.start("Game");
 });
