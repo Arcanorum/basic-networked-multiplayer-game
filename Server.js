@@ -48,9 +48,16 @@ var io = require('socket.io')(server);
 // There is a chance that the port you want to use is already being occupied by another
 // process, so something to watch out for if you can't start the server.
 
+// Defining route handlers
+app.get('/',function(req, res) {
+	res.sendFile(__dirname + '/client/index.html');
+});
+app.use(express.static(__dirname + '/client'));
+
 // Your IP address is how other devices on a network find this one. The 127.0.0.1 is known as a loop-back address, or
 // otherwise known as 'localhost', which is basically a way for a device to send messages to itself.
 server.listen(3512, "127.0.0.1");
+console.log("Server started on http://127.0.0.1:3512");
 
 
 // Used to manage players in the game. See the slightly more advanced stuff

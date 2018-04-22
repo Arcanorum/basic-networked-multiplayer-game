@@ -118,3 +118,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/windows,webstorm,jetbrains
+
+# Node
+node_modules
+package-lock.json
